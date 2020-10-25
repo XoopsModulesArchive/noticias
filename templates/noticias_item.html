@@ -1,0 +1,34 @@
+<table cellpadding="0" cellspacing="0" class="item">
+    <tr>
+        <td>
+        <table cellpadding="0" cellspacing="0" width="98%">
+            <tbody>
+                <tr>
+                    <td class="itemHead">
+                        <span class="itemTitle"><{$story.title}></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemInfo">
+                        <{if $story.poster != ''}><span class="itemPoster"><{$lang_postedby}> <{$story.poster}></span><{/if}>
+                        <span class="itemPostDate"><{$lang_on}> <{$story.posttime}></span> (<span class="itemStats"><{$story.hits}> <{$lang_reads}></span>)
+                    </td>
+                </tr>
+                <tr>
+                    <td><div class="itemBody">
+                            <{$story.imglink}>
+                            <p class="itemText"><{$story.text}></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemFoot">
+                        <span class="itemAdminLink"><{$story.adminlink}></span>
+                        <span class="itemPermaLink"><{$story.morelink}></span>
+                    </td>
+                </tr>
+             </tbody>
+         </table>
+      </td>
+  </tr>
+</table>
